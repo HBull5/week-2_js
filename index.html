@@ -4,6 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="app.js" defer></script>
+		<style>
+			#my-id {
+				background: steelblue;
+				color: #fff;
+				height: 50vh;
+				/* font-size: 3rem; */
+			}
+
+			input:focus {
+				outline: none;
+			}
+
+			#outer {
+				height: 300px;
+				width: 300px;
+				border: 3px solid black;
+				transition: 0.3s;
+			}
+
+			/* #inner {
+				height: 150px;
+				width: 150px;
+				border: 3px solid black;
+			} */
+
+			#grandparent-div {
+				height: 300px;
+				width: 300px; 
+				border: 1px solid blue;
+				display: grid;
+				place-items: center;
+			}
+
+			#parent-div {
+				height: 200px;
+				width: 200px;
+				border: 1px solid red;
+				display: grid;
+				place-items: center;
+			}
+
+			#baby-div {
+				height: 100px;
+				width: 100px;
+				border: 1px solid green;
+			}
+
+			div {
+				height: 50px;
+				width: 50px;
+				border: 1px solid black;
+			}
+		</style>
 		<title>debug</title>
 	</head>
 	<body>
@@ -26,24 +79,57 @@
             <input type="password" /> -->
 		<!-- </div> -->
 
-		<!--!  -->
-		<ul>
-			<li>1</li><!-- comment node -->
+		<!-- <ul>
+			<li>1</li>
 			<li>2</li>
 			<li>3</li>
 		</ul>
 
-		<h1>Heading</h1>
-		<p class="lead">
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-			distinctio asperiores alias placeat ullam eligendi, dolore, fuga cum culpa
-			libero excepturi in commodi repellendus dolorum iste perferendis velit
-			minima nobis.
-		</p>
-		<p class="lead">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam
-			quasi maxime sed hic suscipit delectus cum assumenda! Provident ipsum
-			neque nihil adipisci beatae quis culpa earum iure consectetur explicabo?
-		</p>
+		<div>
+			<h1>Heading</h1>
+
+
+
+
+			<p class="lead" id="my-id">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+				distinctio asperiores alias placeat ullam eligendi, dolore, fuga cum culpa
+				libero excepturi in commodi repellendus dolorum iste perferendis velit
+				minima nobis.
+			</p>
+
+
+			<p class="lead">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam
+				quasi maxime sed hic suscipit delectus cum assumenda! Provident ipsum
+				neque nihil adipisci beatae quis culpa earum iure consectetur explicabo?
+			</p>
+
+		</div> -->
+
+		<!--! Section II  -->
+		<!-- <a href="www.google.com">Go to google </a>
+
+		<form action="">
+			<label for="user">Username</label>
+			<input id="user" type="text">
+
+			<label for="pass">Password</label>
+			<input id="pass" type="password">
+
+			<input type="submit" value="Submit Form">
+		</form>
+
+		<div id="outer">
+			<div id="inner"></div>
+		</div> -->
+		<div id="twin-div"></div>
+
+		<div id="grandparent-div">
+			<div id="parent-div">
+				<div id="baby-div"></div>
+			</div>
+		</div>
+		
 	</body>
 </html>
