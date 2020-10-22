@@ -1,0 +1,19 @@
+{
+  "name": "week-2_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HBull5/week-2_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HBull5/week-2_js/issues"
+  },
+  "homepage": "https://github.com/HBull5/week-2_js#readme"
+}

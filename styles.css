@@ -1,0 +1,19 @@
+input {
+	border: 1px solid black;
+}
+
+input:focus {
+	outline: none;
+}
+
+.validation:valid {
+	border: 1px solid green;
+}
+
+.validation:invalid {
+	border: 1px solid red;
+}
+
+* {
+	font-size: 1.5rem;
+}
